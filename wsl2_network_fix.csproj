@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-wsl2_network_fix-cb990123-5725-48e6-bedd-937544d0a6ea</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.WindowsServices" Version="9.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging.EventLog" Version="9.0.2" />
+    <PackageReference Include="NLog.WindowsEventLog" Version="5.4.0" />
+    <PackageReference Include="SharpPcap" Version="6.3.0" />
+  </ItemGroup>
+</Project>
