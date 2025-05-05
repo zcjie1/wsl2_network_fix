@@ -20,7 +20,7 @@ try {
     Start-Sleep -Seconds 1
 
     if (Test-Path $PublishDir) {
-        Remove-Item $PublishDir -Recurse -Force
+        # Remove-Item $PublishDir -Recurse -Force
         Write-Output "Build directory successfully deleted: $PublishDir"
     }
     

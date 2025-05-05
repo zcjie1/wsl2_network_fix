@@ -13,11 +13,13 @@ Maintains WSL2 network by acquiring Npcap device handles (no actual data process
 
 - Requires [NPcap](https://npcap.com/) installed  
 - With .NET runtime → Run `.\scripts\install.ps1`
-- Without .NET → Run `.\scripts\no_compile_install.ps1` (pre-built x86_64 version)
+- Without .NET runtime → Run `.\scripts\no_compile_install.ps1` (pre-built x86_64 version)
 
 #### Tips
 1. Do not execute scripts from within the scripts directory
 2. All operations require PowerShell with Administrator privileges
+3. Do not run the install*.ps1 script without development environment, as it will delete the pre-built files. 
+Use the no_compile_install.ps1 script instead
 
 ### Script Reference
 | Script | Function |
@@ -43,11 +45,13 @@ Windows 服务程序，用于自动修复 WSL2 网络连接问题。
 
 - 需要预先安装 [NPcap](https://npcap.com/)
 - 已安装 .NET 运行时环境 → 运行 `.\scripts\install.ps1`
-- 无 .NET 环境 → 运行 `.\scripts\no_compile_install.ps1`（使用预编译x86_64版本）
+- 无 .NET 运行时环境 → 运行 `.\scripts\no_compile_install.ps1`（使用预编译x86_64版本）
 
 #### Tips
 1. 请勿进入 scripts 目录内执行脚本
 2. 所有操作需在管理员权限的 PowerShell 中完成
+3. 不要在没有开发环境的情况下运行 install.ps1 脚本，会导致pre-built文件被删除
+请使用 no_compile_install.ps1 脚本
 
 ### 脚本说明
 | 脚本文件 | 功能 |
